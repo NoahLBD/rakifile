@@ -65,6 +65,6 @@ class ArtistPostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def artist_post_params
-      params.require(:artist_post).permit(:image, :first_name, :name, :string, :stage_name, :soundcloud_link, :description, :instagram_link, :spotify_link, :twitter_link)
+      params.require(:artist_post).permit(:image, :first_name, :name, :stage_name, :soundcloud_link, :description, :instagram_link, :spotify_link, :twitter_link)
     end
 end

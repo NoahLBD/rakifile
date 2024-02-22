@@ -4,7 +4,6 @@ one:
   image: MyText
   first_name: MyString
   name: MyString
-  string: MyString
   stage_name: MyString
   soundcloud_link: MyText
   description: MyString
@@ -16,7 +15,6 @@ two:
   image: MyText
   first_name: MyString
   name: MyString
-  string: MyString
   stage_name: MyString
   soundcloud_link: MyText
   description: MyString

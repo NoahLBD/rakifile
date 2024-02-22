@@ -4,7 +4,6 @@ class CreateArtistPosts < ActiveRecord::Migration[7.1]
       t.text :image
       t.string :first_name
       t.string :name
-      t.string :string
       t.string :stage_name
       t.text :soundcloud_link
       t.string :description

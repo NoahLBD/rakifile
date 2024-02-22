@@ -17,7 +17,7 @@ class ArtistPostsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create artist_post" do
     assert_difference("ArtistPost.count") do
-      post artist_posts_url, params: { artist_post: { description: @artist_post.description, first_name: @artist_post.first_name, image: @artist_post.image, instagram_link: @artist_post.instagram_link, name: @artist_post.name, soundcloud_link: @artist_post.soundcloud_link, spotify_link: @artist_post.spotify_link, stage_name: @artist_post.stage_name, string: @artist_post.string, twitter_link: @artist_post.twitter_link } }
+      post artist_posts_url, params: { artist_post: { description: @artist_post.description, first_name: @artist_post.first_name, image: @artist_post.image, instagram_link: @artist_post.instagram_link, name: @artist_post.name, soundcloud_link: @artist_post.soundcloud_link, spotify_link: @artist_post.spotify_link, stage_name: @artist_post.stage_name, twitter_link: @artist_post.twitter_link } }
     end
 
     assert_redirected_to artist_post_url(ArtistPost.last)
@@ -34,7 +34,7 @@ class ArtistPostsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update artist_post" do
-    patch artist_post_url(@artist_post), params: { artist_post: { description: @artist_post.description, first_name: @artist_post.first_name, image: @artist_post.image, instagram_link: @artist_post.instagram_link, name: @artist_post.name, soundcloud_link: @artist_post.soundcloud_link, spotify_link: @artist_post.spotify_link, stage_name: @artist_post.stage_name, string: @artist_post.string, twitter_link: @artist_post.twitter_link } }
+    patch artist_post_url(@artist_post), params: { artist_post: { description: @artist_post.description, first_name: @artist_post.first_name, image: @artist_post.image, instagram_link: @artist_post.instagram_link, name: @artist_post.name, soundcloud_link: @artist_post.soundcloud_link, spotify_link: @artist_post.spotify_link, stage_name: @artist_post.stage_name, twitter_link: @artist_post.twitter_link } }
     assert_redirected_to artist_post_url(@artist_post)
   end
 

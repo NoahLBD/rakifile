@@ -22,7 +22,6 @@ class ArtistPostsTest < ApplicationSystemTestCase
     fill_in "Soundcloud link", with: @artist_post.soundcloud_link
     fill_in "Spotify link", with: @artist_post.spotify_link
     fill_in "Stage name", with: @artist_post.stage_name
-    fill_in "String", with: @artist_post.string
     fill_in "Twitter link", with: @artist_post.twitter_link
     click_on "Create Artist post"
 
@@ -42,7 +41,6 @@ class ArtistPostsTest < ApplicationSystemTestCase
     fill_in "Soundcloud link", with: @artist_post.soundcloud_link
     fill_in "Spotify link", with: @artist_post.spotify_link
     fill_in "Stage name", with: @artist_post.stage_name
-    fill_in "String", with: @artist_post.string
     fill_in "Twitter link", with: @artist_post.twitter_link
     click_on "Update Artist post"
 
