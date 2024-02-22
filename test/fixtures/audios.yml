@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name=string: MyString
+  author_name=string: MyString
+  image=text: MyString
+  audio=file: MyString
+  duration=float: MyString
+  description=string: MyString
+
+two:
+  name=string: MyString
+  author_name=string: MyString
+  image=text: MyString
+  audio=file: MyString
+  duration=float: MyString
+  description=string: MyString
