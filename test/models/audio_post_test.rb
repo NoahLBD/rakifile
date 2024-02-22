@@ -1,6 +1,6 @@
 require "test_helper"
 
-class AudioTest < ActiveSupport::TestCase
+class AudioPostTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

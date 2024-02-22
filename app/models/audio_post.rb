@@ -1,0 +1,2 @@
+class AudioPost < ApplicationRecord
+end
