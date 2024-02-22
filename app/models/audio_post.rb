@@ -1,2 +1,0 @@
-class AudioPost < ApplicationRecord
-end
