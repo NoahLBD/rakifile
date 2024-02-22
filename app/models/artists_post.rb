@@ -1,0 +1,2 @@
+class ArtistsPost < ApplicationRecord
+end

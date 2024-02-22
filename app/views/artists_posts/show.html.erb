@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @artists_post %>
+
+<div>
+  <%= link_to "Edit this artists post", edit_artists_post_path(@artists_post) %> |
+  <%= link_to "Back to artists posts", artists_posts_path %>
+
+  <%= button_to "Destroy this artists post", @artists_post, method: :delete %>
+</div>
