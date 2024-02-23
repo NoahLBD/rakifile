@@ -1,6 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
+<center>
 <h1>Artists posts</h1>
+</center>
 
 <div id="artists_posts">
   <% @artists_posts.each do |artists_post| %>
@@ -12,3 +14,9 @@
 </div>
 
 <%= link_to "New artists post", new_artists_post_path %>
+
+<style>
+  h1{
+    font-size: 70px;
+  }
+</style>
