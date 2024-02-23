@@ -2,6 +2,9 @@
 <div id="<%= dom_id artists_post %>">
 
   <br>
+<div class="container">
+  <div class="box1">
+    <br>
 
   <img src="<%= artists_post.image %>" alt="Change your picture, it didnt worked">
 
@@ -16,7 +19,12 @@
     <strong></strong>
     <%= artists_post.description %>
   </p>  
-  <div class="embed2">
+
+  <br>
+
+  <h3>
+
+<div class="embed2">
     <p>
       <strong></strong>
       <%= raw artists_post.soundcloud_link %>
@@ -29,11 +37,11 @@
       <%= raw artists_post.spotify_link %>
     </p>
   </div>
-  <br>
-    <h1>
-      <strong>Socials</strong>
-    </h1>
-    <br>
+  </div>
+</div>
+<br>
+    <strong>Socials</strong>
+  </h3>
   <p>
   <a href="<%= artists_post.instagram_link %>">Instagram</a>
   </p>
@@ -42,23 +50,23 @@
     <strong></strong>
     <a href="<%= artists_post.twitter_link %>">Twitter</a>
   </p>
-
-  <br>
-  <br>
 </div>
 </center>
 
 <style>
+
+  .box1{
+    border-style: solid;
+    }
   .embed1{
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .embed2{
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20px;
+    margin-right: 20px;
   }
-
-  p{
-    font-size: 1.5vw;
+  img{
+    max-width: 400px;
   }
 </style>
