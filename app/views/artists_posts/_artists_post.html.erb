@@ -7,32 +7,33 @@
 
   <br>
   <br>
-  <frame>
-    <p>
-      <strong>Nickname:</strong>
-      <%= artists_post.stage_name %>
-    </p>
-  </frame>
+  <p>
+    <strong>Nickname:</strong>
+    <%= artists_post.stage_name %>
+  </p>
 
   <p>
     <strong></strong>
     <%= artists_post.description %>
   </p>  
+  <div class="embed2">
+    <p>
+      <strong></strong>
+      <%= raw artists_post.soundcloud_link %>
+    </p>
+  </div>
 
-  <p>
-    <strong></strong>
-    <%= raw artists_post.soundcloud_link %>
-  </p>
-
-  <p>
-    <strong></strong>
-    <%= raw artists_post.spotify_link %>
-  </p>
-
-  <h2>
-    <strong>Socials</strong>
-  </h2>
-
+  <div class="embed1">
+    <p>
+      <strong></strong>
+      <%= raw artists_post.spotify_link %>
+    </p>
+  </div>
+  <br>
+    <h1>
+      <strong>Socials</strong>
+    </h1>
+    <br>
   <p>
   <a href="<%= artists_post.instagram_link %>">Instagram</a>
   </p>
@@ -42,5 +43,22 @@
     <a href="<%= artists_post.twitter_link %>">Twitter</a>
   </p>
 
+  <br>
+  <br>
 </div>
 </center>
+
+<style>
+  .embed1{
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  .embed2{
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  p{
+    font-size: 1.5vw;
+  }
+</style>
