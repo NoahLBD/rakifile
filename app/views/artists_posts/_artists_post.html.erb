@@ -1,50 +1,43 @@
 <center>
 <div id="<%= dom_id artists_post %>">
 
-
+  <br>
 
   <img src="<%= artists_post.image %>" alt="Change your picture, it didnt worked">
 
   <br>
   <br>
 
-  <p>
-    <strong>First name:</strong>
-    <%= artists_post.first_name %>
-  </p>
-
-  <p>
-    <strong>Name:</strong>
-    <%= artists_post.name %>
-  </p>
-
-  <p>
-    <strong>Stage name:</strong>
+    <strong>Nickname:</strong>
     <%= artists_post.stage_name %>
   </p>
 
   <p>
-    <strong>Soundcloud link:</strong>
+    <strong></strong>
+    <%= artists_post.description %>
+  </p>  
+
+  <p>
+    <strong></strong>
     <%= artists_post.soundcloud_link %>
   </p>
 
   <p>
-    <strong>Description:</strong>
-    <%= artists_post.description %>
+    <strong></strong>
+    <%= artists_post.spotify_link %>
   </p>
+
+  <h2>
+    Socials
+  </h2>
 
   <p>
   <a href="<%= artists_post.instagram_link %>">Instagram</a>
   </p>
 
   <p>
-    <strong>Spotify link:</strong>
-    <%= artists_post.spotify_link %>
-  </p>
-
-  <p>
-    <strong>Twitter link:</strong>
-    <%= artists_post.twitter_link %>
+    <strong></strong>
+    <a href="<%= artists_post.twitter_link %>">Twitter</a>
   </p>
 
 </div>
