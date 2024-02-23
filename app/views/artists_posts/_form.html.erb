@@ -1,6 +1,6 @@
 <%= form_with(model: artists_post) do |form| %>
   <% if artists_post.errors.any? %>
-    <div style="color: red">
+    <div style="color: red; text-align: center; font-size: 1.2em;">
       <h2><%= pluralize(artists_post.errors.count, "error") %> prohibited this artists_post from being saved:</h2>
 
       <ul>
@@ -11,52 +11,55 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :image, style: "display: block" %>
-    <%= form.text_area :image %>
-  </div>
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; margin: 2em; font-size: 1.2em;">
 
-  <div>
-    <%= form.label :first_name, style: "display: block" %>
-    <%= form.text_field :first_name %>
-  </div>
+    <div style="flex: 1 0 45%; margin: 1em; padding: 1em;">
+      <%= form.label :first_name, style: "display: block; color: black" %>
+      <%= form.text_field :first_name, style: "width: 100%; padding: 0.5em;" %>
+    </div>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
-  </div>
+    <div style="flex: 1 0 45%; margin: 1em; padding: 1em;">
+      <%= form.label :last_name, style: "display: block; color: black" %>
+      <%= form.text_field :last_name, style: "width: 100%; padding: 0.5em;" %>
+    </div>
 
-  <div>
-    <%= form.label :stage_name, style: "display: block" %>
-    <%= form.text_field :stage_name %>
-  </div>
+    <div style="flex: 1 0 45%; margin: 1em; padding: 1em;">
+      <%= form.label :stage_name, style: "display: block; color: black" %>
+      <%= form.text_field :stage_name, style: "width: 100%; padding: 0.5em;" %>
+    </div>
 
-  <div>
-    <%= form.label :soundcloud_link, style: "display: block" %>
-    <%= form.text_area :soundcloud_link %>
-  </div>
+    <div style="flex: 1 0 45%; margin: 1em; padding: 1em;">
+      <%= form.label :image, style: "display: block; color: black" %>
+      <%= form.text_area :image, style: "width: 100%; padding: 0.5em;" %>
+    </div>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
-  </div>
+    <div style="flex: 1 0 45%; margin: 1em; padding: 1em;">
+      <%= form.label :soundcloud_link, style: "display: block; color: black" %>
+      <%= form.text_area :soundcloud_link, style: "width: 100%; padding: 0.5em;" %>
+    </div>
 
-  <div>
-    <%= form.label :instagram_link, style: "display: block" %>
-    <%= form.text_area :instagram_link %>
-  </div>
+    <div style="flex: 1 0 45%; margin: 1em; padding: 1em;">
+      <%= form.label :description, style: "display: block; color: black" %>
+      <%= form.text_field :description, style: "width: 100%; padding: 0.5em;" %>
+    </div>
 
-  <div>
-    <%= form.label :spotify_link, style: "display: block" %>
-    <%= form.text_area :spotify_link %>
-  </div>
+    <div style="flex: 1 0 45%; margin: 1em; padding: 1em;">
+      <%= form.label :instagram_link, style: "display: block; color: black" %>
+      <%= form.text_area :instagram_link, style: "width: 100%; padding: 0.5em;" %>
+    </div>
 
-  <div>
-    <%= form.label :twitter_link, style: "display: block" %>
-    <%= form.text_area :twitter_link %>
-  </div>
+    <div style="flex: 1 0 45%; margin: 1em; padding: 1em;">
+      <%= form.label :spotify_link, style: "display: block; color: black" %>
+      <%= form.text_area :spotify_link, style: "width: 100%; padding: 0.5em;" %>
+    </div>
 
-  <div>
-    <%= form.submit %>
+    <div style="flex: 1 0 45%; margin: 1em; padding: 1em;">
+      <%= form.label :twitter_link, style: "display: block; color: black" %>
+      <%= form.text_area :twitter_link, style: "width: 100%; padding: 0.5em;" %>
+    </div>
+
+    <div style="width: 100%; text-align: center; margin: 1em;">
+      <%= form.submit style: "padding: 1em; font-size: 1.2em;" %>
+    </div>
   </div>
 <% end %>
