@@ -8,17 +8,7 @@
   <br>
   <br>
 
-<<<<<<< HEAD
-  <p>
-    <strong>First and last name:</strong>
-    <%= artists_post.first_name %>
-  </p>
-
-  <p>
-    <strong>Stage name:</strong>
-=======
     <strong>Nickname:</strong>
->>>>>>> ec8f87af8e0bbcc4754b0bff32f078aa21ece49f
     <%= artists_post.stage_name %>
   </p>
 
@@ -29,16 +19,16 @@
 
   <p>
     <strong></strong>
-    <%= artists_post.soundcloud_link %>
+    <%= raw artists_post.soundcloud_link %>
   </p>
 
   <p>
     <strong></strong>
-    <%= artists_post.spotify_link %>
+    <%= raw artists_post.spotify_link %>
   </p>
 
   <h2>
-    Socials
+    <strong>Socials</strong>
   </h2>
 
   <p>
