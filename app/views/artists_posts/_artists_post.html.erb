@@ -1,9 +1,14 @@
+<center>
 <div id="<%= dom_id artists_post %>">
 
+  <br>
 
+  <img src="<%= artists_post.image %>" alt="Change your picture, it didnt worked">
 
-  <img src="<%= artists_post.image %>" alt="Did not worked">
+  <br>
+  <br>
 
+<<<<<<< HEAD
   <p>
     <strong>First and last name:</strong>
     <%= artists_post.first_name %>
@@ -11,32 +16,39 @@
 
   <p>
     <strong>Stage name:</strong>
+=======
+    <strong>Nickname:</strong>
+>>>>>>> ec8f87af8e0bbcc4754b0bff32f078aa21ece49f
     <%= artists_post.stage_name %>
   </p>
 
   <p>
-    <strong>Soundcloud link:</strong>
+    <strong></strong>
+    <%= artists_post.description %>
+  </p>  
+
+  <p>
+    <strong></strong>
     <%= artists_post.soundcloud_link %>
   </p>
 
   <p>
-    <strong>Description:</strong>
-    <%= artists_post.description %>
-  </p>
-
-  <p>
-    <strong>Instagram link:</strong>
-    <%= artists_post.instagram_link %>
-  </p>
-
-  <p>
-    <strong>Spotify link:</strong>
+    <strong></strong>
     <%= artists_post.spotify_link %>
   </p>
 
+  <h2>
+    Socials
+  </h2>
+
   <p>
-    <strong>Twitter link:</strong>
-    <%= artists_post.twitter_link %>
+  <a href="<%= artists_post.instagram_link %>">Instagram</a>
+  </p>
+
+  <p>
+    <strong></strong>
+    <a href="<%= artists_post.twitter_link %>">Twitter</a>
   </p>
 
 </div>
+</center>

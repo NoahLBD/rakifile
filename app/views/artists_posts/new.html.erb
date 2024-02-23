@@ -1,6 +1,8 @@
+<div class="new">
 <center>
   <h1><b>New artists post</b></h1>
 </center>
+</div>
 
 <%= render "form", artists_post: @artists_post %>
 
@@ -9,3 +11,9 @@
 <div>
   <%= link_to "Back to artists posts", artists_posts_path %>
 </div>
+
+<style>
+  .new{
+    font-size: 9999px;
+  }
+</style>
